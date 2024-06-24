@@ -1,6 +1,5 @@
-
 'use client';
-// import TimeAgo from "@/app/components/TimeAgo";
+import TimeAgo from "@/app/components/TimeAgo";
 import {Job, JobModel} from "@/models/Job";
 import {faHeart} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -51,11 +50,11 @@ export default function JobRow({jobDoc}:{jobDoc:Job}) {
                 )}
               </div>
             </div>
-            {/* {jobDoc.createdAt && (
+            {jobDoc.createdAt && (
               <div className="content-end text-gray-500 text-sm">
                 <TimeAgo createdAt={jobDoc.createdAt} />
               </div>
-            )} */}
+            )}
           </div>
         </div>
       </div>
